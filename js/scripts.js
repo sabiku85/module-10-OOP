@@ -20,8 +20,8 @@ $(function() {
 			var $column = $('<div>').addClass('column'),
 				$columnTitle = $('<h2>').addClass('column-title').text(self.name),
 				$columnCardList = $('<ul>').addClass('column-card-list'),
-				$columnDelete = $('<button>').addClass('btn-delete').text('x'),
-				$columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
+				$columnDelete = $('<button>').addClass('btn-delete btn-danger btn-xs').text('Usuń kolumnę'),
+				$columnAddCard = $('<button>').addClass('add-card btn-success btn-lg').text('Dodaj kartę');
 		
 			$columnDelete.click(function() {
 		       	self.removeColumn();
@@ -49,7 +49,7 @@ $(function() {
 		function createCard() {
 			var $card = $('<li>').addClass('card'),
 				$cardDescription = $('<p>').addClass('card-description').text(self.description),
-				$cardDelete = $('<button>').addClass('btn-delete').text('x');
+				$cardDelete = $('<button>').addClass('btn-delete btn-warning btn-xs').text('Usuń kartę');
 			
 			$cardDelete.click(function() {
        			self.removeCard();
@@ -118,4 +118,4 @@ $(function() {
 	todoColumn.addCard(card1);
 	doingColumn.addCard(card2);
 
-});
+})

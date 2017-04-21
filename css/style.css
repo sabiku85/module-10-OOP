@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+}
+
+h1 {
+	color: #FFF;
+	font: bold 72px 'Arial';
+	text-align: center;
+	padding-top: 50px;
+}
+
+.create-column.btn-block {
+	width: 60%;
+	margin: 50px auto;
+}
+
+.column-container {
+	display: flex;
+	min-height: 50px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 50px auto;
+}
+
+.column {
+	min-width: 250px;
+	margin: 0 auto;
+	border: 2px solid #FFFFCC;
+}
+
+.column-title {
+	color: #FFFFCC;
+	font: 36px 'Arial';
+	text-align: center;
+	border-bottom: 2px solid #FFFFCC;
+	padding-bottom: 10px; 
+}
+
+.btn-delete,
+.add-card {
+	display: flex;
+	width: 50%;
+	margin: 15px auto;
+	justify-content: center;
+}
+
+.btn-warning {
+	background-color: #FF9900;
+	border-color: #FF9900;
+}
+
+.column-card-list {
+	border-top: 2px solid #FFFFCC;
+	min-height: 100%;
+	width: 100%;
+	min-width: 125px;
+}
+
+.card {
+	margin: 0 auto;
+}
+
+.card-description {
+	min-height: 50px;
+	width: 120px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 10px auto 30px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #FFFF00;
+	color: #000033;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.card-description:hover {
+	cursor: pointer;
+	background-color: #FFFF66;
+}
